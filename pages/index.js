@@ -184,7 +184,7 @@ export default function Example() {
               <a href="#" className="flex">
                 <img
                   className="h-8 w-auto -mt-3 sm:h-10"
-                  src="/infobyte logo.png"
+                  src="/infobyte1 logo.png"
                   alt=""
                 />
               </a>
@@ -432,9 +432,21 @@ export default function Example() {
         </Popover>
          <motion.div         transition={{ type: 'spring', stiffness: 260, damping: 20, delay: 1 }}
 >
-        <div className="bg-gray-100 py-12" onMouseEnter={() => setHeader(true)}>
+   <div className="flex justify-center items-center space-x-2 py-14 bg-gray-100">
+    <div className="flex flex-col justify-center items-center py-12 ">
+<div className="bg-purple-900 rounded-full px-2 py-2 border border-white"></div>
+<div className=" animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    <span className="text-xl text-left w-4 md:-ml-3 text-purple-600">{"<>"}</span>
+<div className="animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    </div>
+    
+        <div className="bg-gray-100 " onMouseEnter={() => setHeader(true)}>
+
           <div className="container mx-auto flex flex-col-reverse items-center justify-center md:flex-row md:grid md:grid-cols-2 md:gap-8">
-            <div className="md:pr-8 text-center md:text-left">
+
+            <div className="md:pr-8 text-center md:text-left infinite-animation">
               <div className="text-5xl space-y-2 text-gray-500">
                 <p>Power up</p>
                 <p>your HR processes.</p>
@@ -470,13 +482,23 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="bg-gray-50  py-20" onMouseEnter={() => setHeader(true)}>
+        </div>
+
+        <div className="flex justify-between items-center space-x-2 py-14 bg-gray-50">
+    <div className="flex  flex-col justify-center items-center py-12 md:px-16">
+<div className=" animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    <span className="text-xl text-left w-4 md:-ml-3 text-purple-600">{"<>"}</span>
+<div className="animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    </div>  
+        <div className="bg-gray-50   py-20" onMouseEnter={() => setHeader(true)}>
           <div className="container  mx-auto flex flex-col items-center justify-center">
             <div className="md:pl-2 md:mt-0">
               <img
                 src="https://www.datocms-assets.com/40521/1693224362-admin-homepage-dtp.png?auto=format&w=2055"
                 alt=""
-                className="w-full h-96 shadow-sm custom-bounce"
+                className="w-full h-96 shadow-sm "
               />
             </div>
             <div className="text-3xl sm:text-4xl md:text-5xl space-y-2 text-gray-700 text-center mt-8">
@@ -513,8 +535,61 @@ export default function Example() {
             </div>
           </div>
         </div>
+        <div className="visible bg-gray-50   py-20" >
+          <div className="container  mx-auto flex flex-col items-center justify-center">
+            <div className="md:pl-2 md:mt-0">
+              <img
+                src="https://www.datocms-assets.com/40521/1693224362-admin-homepage-dtp.png?auto=format&w=2055"
+                alt=""
+                className="w-full h-96 shadow-sm hidden "
+              />
+            </div>
+            <div className="text-3xl hidden sm:text-4xl md:text-5xl space-y-2 text-gray-700 text-center mt-8">
+              <p>Leave HR to greytHR</p>
+              <p className="text-orange-500">
+                While you focus on business growth.
+              </p>
+            </div>
+            <div className="text-xl hidden text-gray-700 text-start mt-8  grid-cols-1 md:grid-cols-2 gap-3">
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong>{" "}
+                Streamline all HR processes
+              </p>
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong> Save
+                time & money
+              </p>
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong>{" "}
+                Ensure 100% statutory compliance
+              </p>
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong>{" "}
+                Promote transparency
+              </p>
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong>{" "}
+                Ensure uniform policy implementation
+              </p>
+              <p className="mb-4 md:mb-0">
+                <strong className="text-2xl font-extrabold">&bull;</strong>{" "}
+                Enhance employee engagement
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        </div>
 
-        <div className="bg-gray-100 py-20" onMouseEnter={() => setHeader(true)}>
+        <div className="flex justify-between items-center space-x-2 py-14 bg-gray-100">
+    <div className="flex w-[5%]  flex-col justify-center items-center py-12 md:px-16">
+<div className=" animated-gradient1 fade-down h-[350px] w-1.5">
+    </div>
+    <span className="text-xl text-left w-4 md:-ml-3 text-purple-600">{"<>"}</span>
+<div className="animated-gradient1 fade-down h-[350px] w-1.5">
+    </div>
+    </div> 
+        <div className="bg-gray-100 w-[94%] py-20" onMouseEnter={() => setHeader(true)}>
           <div className="container mx-auto flex flex-col items-center justify-center">
             <div className="text-3xl sm:text-4xl md:text-5xl py-12 text-gray-700 text-center mt-8">
               <p>
@@ -527,8 +602,17 @@ export default function Example() {
             </div>
           </div>
         </div>
+</div>
 
-        <div className="bg-gray-50 py-12" onMouseEnter={() => setHeader(true)}>
+<div className="flex justify-between items-center space-x-2 py-14 bg-gray-50">
+    <div className="flex w-[5%]  flex-col justify-center items-center py-12 md:px-16">
+<div className=" animated-gradient2 fade-down h-[350px] w-1.5">
+    </div>
+    <span className="text-xl text-left w-4 md:-ml-3 text-purple-600">{"<>"}</span>
+<div className="animated-gradient2 fade-down h-[350px] w-1.5">
+    </div>
+    </div> 
+        <div className="bg-gray-50 w-[94%] py-12" onMouseEnter={() => setHeader(true)}>
           <div className="container mx-auto flex flex-col-reverse items-center justify-center md:flex-row md:grid md:grid-cols-2 md:gap-8">
             <div className="md:pl-8 mt-8 md:mt-0">
               <img
@@ -584,8 +668,16 @@ export default function Example() {
             </div>
           </div>
         </div>
-
-        <div className="bg-gray-100 py-20" onMouseEnter={() => setHeader(true)}>
+</div>
+<div className="flex justify-between items-center space-x-2 py-14 bg-gray-100">
+    <div className="flex w-[5%]  flex-col justify-center items-center py-12 md:px-16">
+<div className=" animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    <span className="text-xl text-left w-4 md:-ml-3 text-purple-600">{"<>"}</span>
+<div className="animated-gradient fade-down h-[350px] w-1.5">
+    </div>
+    </div> 
+        <div className="bg-gray-100 w-[94%] py-20" onMouseEnter={() => setHeader(true)}>
           <div className="container mx-auto flex flex-col items-center justify-center">
             <div className="text-3xl sm:text-4xl md:text-5xl py-12 space-y-6 text-gray-700 text-center mt-8">
               <p>
@@ -632,7 +724,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-
+</div>
         <div className="bg-gray-50 py-20" onMouseEnter={() => setHeader(true)}>
           <div className="container mx-auto  flex flex-col items-center justify-center">
             <div className="text-3xl sm:text-4xl md:text-5xl pb -12 space-y-6 text-gray-700 text-center mt-8">
