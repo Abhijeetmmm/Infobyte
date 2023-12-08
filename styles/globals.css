@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.custom-bounce {
+    animation: custom-bounce 3s infinite;
   }
+  
+  @keyframes custom-bounce {
+    0%, 100% {
+      transform: translateY(-7%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+
+  .marquee-container {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .marquee-card {
+    flex: 0 0 auto;
+    margin-right: 16px; /* Adjust spacing between cards */
+    opacity: 0.5; /* Adjust card opacity */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .marquee-card.active {
+    opacity: 1;
+  }
+  
+  /* Add CSS animations for a marquee effect */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .marquee-container {
+    animation: marquee 10s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+  
+
+  @keyframes customAnimation {
+    0%, 100% {
+        transform: translateX(-7%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+        opacity: 1; /* Add opacity for fade-out effect */
+    }
+    50% {
+        transform: translateX(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+        opacity: 0; /* Add opacity for fade-in effect */
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.infinite-animation {
+    animation: customAnimation 9s 1; /* Run only once */
 }
+
